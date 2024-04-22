@@ -1,4 +1,4 @@
-<section class="home_hero pt-5 mb-5">
+<section class="home_hero py-5 mb-5">
     <div class="container-xl text-center">
         <h1><?=get_field('title')?></h1>
         <div class="home_hero__content"><?=get_field('content')?></div>
