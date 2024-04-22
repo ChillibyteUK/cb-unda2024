@@ -1,0 +1,34 @@
+.btn {
+    text-decoration: none;
+    border-radius: 100vw;
+    border-style: solid;
+    border-width: 1px;
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    font-weight: var(--fw-700);
+    letter-spacing: var(--ls-900);
+    transition: color var(--transition), background-color var(--transition);
+}
+
+.btn-primary {
+    background-color: var(--col-orange-400);
+    color: var(--col-white);
+    &:hover {
+        background-color: color-mix(in srgb, var(--col-orange-400), black 20% );
+        color: var(--col-white);
+    }
+}
+
+.btn-previous, .btn-next {
+    a {
+        transition: all 300ms ease;
+    }
+    a:hover {
+        text-decoration: none;
+    }
+}
+.btn-previous:hover, .btn-next:hover {
+    a {
+        color: var(--col-red-400);
+    }
+}

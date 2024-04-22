@@ -1,0 +1,28 @@
+.testimonials {
+    &__quote {
+        position: relative;
+        @media (min-width:576px) {
+            border-right: 1px solid var(--col-blue-900);
+        }
+        &::before {
+            content: "\f10d";
+            font-family: 'font awesome 6 free';
+            font-weight: 600;
+            font-size: 60px;
+            color: var(--col-blue-900);
+        }
+    }
+    &__container {
+
+    }
+    .testimonial__content {
+        font-size: var(--fs-600);
+    }
+    .testimonial__name {
+        font-weight: var(--fw-600);
+        color: var(--col-blue-900);
+    }
+    .testimonial__source {
+        font-style: italic;
+    }
+}

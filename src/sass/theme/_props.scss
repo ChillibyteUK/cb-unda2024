@@ -1,0 +1,53 @@
+$col-primary: #00A0DE;
+$col-dark: #00487C;
+$col-darkest: #0D0630;
+$col-highlight: #53DD6C;
+$col-grey: #FFF0F0;
+
+:root {
+
+    --col-white: #ffffff;
+    --col-black: #000000;
+    --col-light: #f2f2f2;
+    --col-grey-200: #f4f7f7;
+    --col-grey-400: #e8eeee;
+
+    --col-green-200: #b2c4c6;
+    --col-green-300: #66898e;
+    --col-green-400: #003a42;
+
+    --col-orange-400: #ff6a42;
+
+    --ff-body: 'GT Walsheim', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --ff-headings: 'Blackler Pro Display', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    --fw-400: 400;
+    --fw-700: 700;
+
+    --fs-300: 14px;
+    --fs-350: 16px;
+    --fs-400: 18px;
+    --fs-500: 22px;
+    --fs-600: 24px;
+    --fs-700: 30px;
+    // --fs-800: 32px;
+    --fs-800: clamp(2rem, 1.3913rem + 3.0435vw, 3.75rem);
+    // --fs-900: 40px;
+    --fs-900: clamp(2.5rem, 1.6304rem + 4.3478vw, 5rem);
+
+    --lh-normal: 1.5;
+    --lh-700: 1.3;
+    --lh-800: 1.2;
+    --lh-900: 1.1;
+
+
+    --ls-900: 0.02em;
+
+    --h-top-mobile: 64px;
+    --h-top: 64px;
+
+    --transition: 200ms ease-in-out;
+
+    --shadow-in: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    --shadow-out: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}

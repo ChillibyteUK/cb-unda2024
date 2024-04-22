@@ -1,0 +1,30 @@
+footer {
+    background-color: var(--col-green-400);
+    color: var(--col-white);
+    font-size: var(--fs-350);
+    .menu {
+        list-style: none;
+        padding-inline-start: 0;
+    }
+    a {
+        color: var(--col-white);
+        &:hover {
+            color: var(--col-orange-400);
+        }
+    }
+    .footer__address::first-line {
+        font-weight: var(--fw-700);
+    }
+    .colophon {
+        font-size: var(--fs-300);
+        color: var(--col-grey-200);
+    }
+   .cb {
+        content: url(../img/cb.png);
+        // filter: grayscale(1);
+        transition: opacity 300ms ease;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+}

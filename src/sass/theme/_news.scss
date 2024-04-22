@@ -1,0 +1,111 @@
+.news_index {
+    display: grid;
+    --col-count: 1;
+    @media (min-width: 576px) {
+        --col-count: 2;
+    }
+    @media (min-width: 992px) {
+        --col-count: 3;
+    }
+    grid-template-columns: repeat(var(--col-count), 1fr);
+    gap: 1rem;
+    
+    &__card {
+        height: 100%;
+    }
+
+}
+
+.navigation {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    width: fit-content;
+    border-radius: 0.25rem;
+    ul{
+        list-style: none;
+        display: flex;
+        padding-inline-start: 0;
+    }
+    li {
+        
+        border: 1px solid var(--col-green-400);
+        border-right: none;
+        background-color: white;
+        &.active {
+            background-color: var(--col-blue-400);
+            a {
+                cursor: default;
+                font-weight: 600;
+            }
+        }
+        &:first-of-type {
+            border-top-left-radius: 0.25rem;
+            border-bottom-left-radius: 0.25rem;
+        }
+        &:last-of-type {
+            border-top-right-radius: 0.25rem;
+            border-bottom-right-radius: 0.25rem;
+            border-right: 1px solid var(--col-green-400);
+        }
+    }
+
+    a {
+        display: block;
+        text-decoration: none;
+        color: black;
+        padding: 0.5rem 1rem;
+    }
+
+}
+
+.related {
+    &__card {
+        text-decoration: none;
+        display: grid;
+        grid-template-rows: auto 1fr;
+        &:hover {
+            .related__image {
+                transform: scale(1.05);
+            }
+        }
+    }
+    &__image_container {
+        overflow: hidden;   
+    }
+    &__image {
+        aspect-ratio: 16 / 9;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        transition: transform 300ms ease;
+    }
+    &__content {
+        background-color: white;
+        color: var(--col-green-deep);
+        padding: 0.5rem;
+        min-height: 4rem;
+        display: grid;
+        grid-template-rows: 1fr auto;
+        height: 100%;
+    }
+    &__title {
+        font-size: var(--fs-700);
+    }
+    &__date {
+        font-size: var(--fs-300);
+    }
+}
+
+
+.blog {
+    &__image {
+        aspect-ratio: 16 / 9;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        transition: transform 300ms ease;
+        margin-bottom: 0.5rem;
+    }
+    &__content > .container-xl {
+        padding-inline: 0;
+    }
+}

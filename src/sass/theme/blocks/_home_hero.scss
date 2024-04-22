@@ -1,0 +1,20 @@
+.home_hero {
+    background-color: var(--col-grey-400);
+    color: var(--col-green-400);
+    h1 {
+        font-size: var(--fs-900);
+        margin-bottom: 1rem;
+    }
+    &__content {
+        max-width: 70ch;
+        margin-inline: auto;
+        margin-bottom: 1rem;
+    }
+    &__graphic {
+        background-image: url(../img/Unda_Landscape_Illustration.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 400px;
+    }
+}

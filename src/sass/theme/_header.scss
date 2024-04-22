@@ -1,0 +1,32 @@
+.header,
+header {
+
+    &__logo {
+        max-width: 160px;
+        object-fit: contain;
+    }
+
+    #wrapper-navbar {
+        transition: top var(--transition);
+    }
+    &.hidden {
+        #wrapper-navbar {
+            top: -91px;
+        }
+    }
+
+   .prenav {
+        background-color: var(--col-grey-400);
+        padding-block: 0.5rem;
+   }
+
+   #navbar {
+    background-color: var(--col-grey-400);
+    a.nav-link {
+        font-family: var(--ff-body);
+        // text-transform: uppercase;
+        font-weight: var(--fw-700);
+        font-size: var(--fs-350);
+    }
+   }
+}

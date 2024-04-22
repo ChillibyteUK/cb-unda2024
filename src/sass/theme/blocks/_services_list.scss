@@ -1,0 +1,26 @@
+.services_list {
+    &__item {
+        display: block;
+        padding: 1rem;
+        border-radius: 1rem;
+        background-color: var(--col-white);
+        text-align: center;
+        height: 100%;
+        color: var(--col-green-400);
+        box-shadow: var(--shadow-out);
+        transition: box-shadow var(--transition), transform var(--transition);
+        &:hover {
+            box-shadow: var(--shadow-in);
+            transform: translateY(2px);
+            color: var(--col-green-400);
+        }
+    }
+    &__icon {
+        display: block;
+        margin-inline: auto;
+        width: 80px;
+        height: 100px;
+        object-fit: contain;
+        margin-bottom: 0.75rem;
+    }
+}

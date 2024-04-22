@@ -1,0 +1,41 @@
+.all_projects {
+    &__grid {
+        display: grid;
+        gap: 1rem;
+        @media(min-width:992px) {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    .project_card {
+        display: grid;
+        gap: 1rem;
+        flex-wrap: wrap;
+        background-color: var(--col-white);
+        border-radius: 1rem;
+        padding: 1rem;
+        box-shadow: var(--shadow-out);
+        margin-bottom: 1rem;
+        color: var(--col-green-400);
+        transition: box-shadow var(--transition), transform var(--transition);
+        @media(min-width:768px) {
+            grid-template-columns: 200px 1fr;
+        }
+        img {
+            width: 200px;
+            aspect-ratio: 4 / 3;
+            object-fit: cover;
+            object-position: center;
+        }
+        &:hover {
+            box-shadow: var(--shadow-in);
+            transform: translateY(2px);
+            color: var(--col-green-400);
+        }
+    }
+
+    .readmore {
+        display: inline-block;
+        break-inside: avoid;
+        color: var(--col-orange-400);
+    }
+}
