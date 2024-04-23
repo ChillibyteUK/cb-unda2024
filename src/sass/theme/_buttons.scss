@@ -18,6 +18,14 @@
         color: var(--col-white);
     }
 }
+.btn-secondary {
+    background-color: var(--col-white);
+    color: var(--col-orange-400);
+    &:hover {
+        background-color: color-mix(in srgb, var(--col-white), black 20% );
+        color: var(--col-orange-400);
+    }
+}
 
 .btn-previous, .btn-next {
     a {

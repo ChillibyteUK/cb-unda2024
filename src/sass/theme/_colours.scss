@@ -25,6 +25,11 @@
     color: var(--col-green-400);
 }
 
+.has-orange-400-color,
+.text-orange-400 {
+    color: var(--col-orange-400);
+}
+
 .text-white.half-line::after {
     border-color: white;
 }

@@ -30,16 +30,6 @@ $after;
                     <?=get_the_title()?></h1>
                     <div class="news__meta d-flex align-items-center fs-300 mb-2">
                 <div>Posted on <?=$the_date?></div>
-                <?php
-                if (is_array($countries) && !empty($countries)) {
-                    foreach ($countries as $cc) {
-                        $ccode = get_field('country_code', $cc);
-                    ?>
-                    <div>, in <a href="<?=get_term_link($cc->term_id)?>"><?=$cc->name?>&nbsp; <span class="fi fi-<?=$ccode?>"></span></a></div>
-                    <?php
-                    }
-                }
-                ?>
                 &nbsp;|&nbsp;<div><?php
                 $catlinks = array();
                 foreach ($cats as $c) {
@@ -74,7 +64,7 @@ foreach ($blocks as $block) {
 ?>
             </div>
             <div class="col-lg-3 related">
-                <h3 class="text-blue-400 dot">Related News</h3>
+                <h3>Related News</h3>
                 <?php
 $cats = get_the_category();
 $ids = wp_list_pluck($cats, 'term_id');
@@ -88,8 +78,8 @@ while ($r->have_posts()) {
     ?>
                 <a class="related__card d-block mb-3"
                     href="<?=get_the_permalink()?>">
-                    <div class="fs-300 text-blue-400"><?=get_the_date('jS F, Y')?></div>
-                    <h3 class="fs-400 fw-600">
+                    <div class="related__date"><?=get_the_date('jS F, Y')?></div>
+                    <h3 class="related__title">
                         <?=get_the_title()?></h3>
                 </a>
                 <hr>

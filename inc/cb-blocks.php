@@ -110,6 +110,24 @@ function acf_blocks()
             'mode'	=> 'edit',
             'supports' => array('mode' => false, 'anchor' => true),
         ));
+        acf_register_block_type(array(
+            'name'				=> 'cb_usps',
+            'title'				=> __('CB USPs'),
+            'category'			=> 'layout',
+            'icon'				=> 'cover-image',
+            'render_template'	=> 'page-templates/blocks/cb_usps.php',
+            'mode'	=> 'edit',
+            'supports' => array('mode' => false, 'anchor' => true),
+        ));
+        acf_register_block_type(array(
+            'name'				=> 'cb_cta',
+            'title'				=> __('CB CTA'),
+            'category'			=> 'layout',
+            'icon'				=> 'cover-image',
+            'render_template'	=> 'page-templates/blocks/cb_cta.php',
+            'mode'	=> 'edit',
+            'supports' => array('mode' => false, 'anchor' => true),
+        ));
     }
 }
 add_action('acf/init', 'acf_blocks');
