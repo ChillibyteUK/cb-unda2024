@@ -1,4 +1,7 @@
-<section class="latest_cs bg-grey-400 py-5 my-5">
+<?php
+$classs = $block['className'] ?? 'my-5';
+?>
+<section class="latest_cs bg-grey-400 py-5 <?=$class?>">
     <div class="container-xl">
         <h2 class="mb-4">Latest Projects</h2>
         <div class="row g-4">
