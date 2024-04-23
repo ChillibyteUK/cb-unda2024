@@ -21678,6 +21678,81 @@ footer .cb:hover {
   color: var(--col-orange-400);
 }
 
+.people__card {
+  cursor: pointer;
+  text-align: center;
+}
+.people__card img {
+  display: block;
+  aspect-ratio: 3/4;
+  width: 100%;
+  max-width: 200px;
+  margin-inline: auto;
+  -o-object-fit: cover;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: var(--shadow-out);
+  transition: box-shadow var(--transition), transform var(--transition);
+}
+.people__card:hover img {
+  box-shadow: var(--shadow-in);
+  transform: translateY(2px);
+}
+.people__role {
+  font-size: var(--fs-300);
+  text-transform: uppercase;
+  font-weight: var(--fw-700);
+}
+@media all and (min-width: 576px) {
+  .people .modal-dialog {
+    max-width: 70vw;
+  }
+}
+.people .modal-content {
+  border-radius: 0;
+  border: none;
+  background-color: transparent;
+  position: relative;
+}
+.people .modal-content button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  border: 0;
+  z-index: 9;
+}
+.people .modal-content .close {
+  text-align: right;
+  top: 0rem;
+}
+.people .modal-content .modal-body {
+  background-color: var(--col-white);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 1rem;
+}
+.people .modal-content .person__image {
+  display: block;
+  aspect-ratio: 3/4;
+  width: 100%;
+  max-width: 200px;
+  margin-inline: auto;
+  -o-object-fit: cover;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+}
+.people .modal-content .person__role {
+  font-size: var(--fs-300);
+  text-transform: uppercase;
+  font-weight: var(--fw-700);
+}
+
 body {
   background-color: var(--col-white);
   color: var(--col-black);
