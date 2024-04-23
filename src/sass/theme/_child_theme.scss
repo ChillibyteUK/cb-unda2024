@@ -29,9 +29,10 @@ a {
 }
 
 main a:not([class]) {
-    color: var(--col-green-400);
+    color: var(--col-orange-400);
+    font-weight: var(--fw-700);
     &:hover {
-        color: color-mix(in srgb, var(--col-blue-900), var(--col-black) 10%);
+        color: color-mix(in srgb, var(--col-orange-400), var(--col-black) 10%);
     }
 }
 
