@@ -21753,6 +21753,36 @@ footer .cb:hover {
   font-weight: var(--fw-700);
 }
 
+.latest_cs__card {
+  display: block;
+  height: 100%;
+  background-color: var(--col-white);
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: var(--shadow-out);
+  color: var(--col-green-400);
+  transition: box-shadow var(--transition), transform var(--transition);
+  font-weight: var(--fw-700);
+  text-wrap: balance;
+}
+.latest_cs__card:hover {
+  color: var(--col-green-400);
+  box-shadow: var(--shadow-in);
+  transform: translateY(2px);
+}
+.latest_cs__card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16/9;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+  margin-bottom: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
 body {
   background-color: var(--col-white);
   color: var(--col-black);

@@ -1,0 +1,29 @@
+.latest_cs {
+    &__card {
+        display: block;
+        height: 100%;
+        background-color: var(--col-white);
+        padding: 1rem;
+        border-radius: 1rem; // outer radius = inner radius + padding
+        box-shadow: var(--shadow-out);
+        color: var(--col-green-400);
+        transition: box-shadow var(--transition), transform var(--transition);
+        font-weight: var(--fw-700);
+        text-wrap: balance;
+        &:hover {
+            color: var(--col-green-400);
+            box-shadow: var(--shadow-in);
+            transform: translateY(2px);
+        }
+        img {
+            display: block;
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            object-fit: cover;
+            object-position: center;
+            margin-bottom: 0.5rem;
+            border-top-left-radius: 0.5rem;
+            border-top-right-radius: 0.5rem;
+        }
+    }
+}
