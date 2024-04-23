@@ -1,6 +1,6 @@
 <div class="container-xl pb-5">
     <div class="row pb-5">
-        <div class="col-md-6">
+        <div class="col-md-4">
             <h2>Contact Unda</h2>
             <ul class="fa-ul">
                 <li><span class="fa-li"><i class="fa-solid fa-phone"></i></span> <?=contact_phone()?></li>
@@ -10,7 +10,7 @@
             <h3>Connect</h3>
             <?=social_icons()?>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-8">
             <iframe src="<?=get_field('maps_url','options')?>" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
