@@ -1,6 +1,8 @@
 .latest_cs {
     &__card {
-        display: block;
+        display: grid;
+        gap: 0.5rem;
+        grid-template-rows: auto 1fr 1.2rem;
         height: 100%;
         background-color: var(--col-white);
         padding: 1rem;
@@ -21,7 +23,6 @@
             aspect-ratio: 16 / 9;
             object-fit: cover;
             object-position: center;
-            margin-bottom: 0.5rem;
             border-top-left-radius: 0.5rem;
             border-top-right-radius: 0.5rem;
         }

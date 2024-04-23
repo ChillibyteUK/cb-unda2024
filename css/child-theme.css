@@ -21735,7 +21735,9 @@ footer .cb:hover {
 }
 
 .latest_cs__card {
-  display: block;
+  display: grid;
+  gap: 0.5rem;
+  grid-template-rows: auto 1fr 1.2rem;
   height: 100%;
   background-color: var(--col-white);
   padding: 1rem;
@@ -21759,7 +21761,6 @@ footer .cb:hover {
   object-fit: cover;
   -o-object-position: center;
   object-position: center;
-  margin-bottom: 0.5rem;
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
 }

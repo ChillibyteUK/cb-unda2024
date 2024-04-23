@@ -18,6 +18,9 @@ $class = $block['className'] ?? 'my-5';
             <a href="<?=get_the_permalink()?>" class="latest_cs__card">
                 <img src="<?=wp_get_attachment_image_url($images[0],'large')?>" alt="">
                 <div class="h3"><?=get_the_title()?></div>
+                <div class="text-end">
+                    <span class="fw-700 text-orange-400">Read more</span>
+                </div>
             </a>
         </div>
             <?php
