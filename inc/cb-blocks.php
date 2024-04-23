@@ -101,6 +101,15 @@ function acf_blocks()
             'mode'	=> 'edit',
             'supports' => array('mode' => false, 'anchor' => true),
         ));
+        acf_register_block_type(array(
+            'name'				=> 'cb_latest_case_studies',
+            'title'				=> __('CB Latest Case Studies'),
+            'category'			=> 'layout',
+            'icon'				=> 'cover-image',
+            'render_template'	=> 'page-templates/blocks/cb_latest_case_studies.php',
+            'mode'	=> 'edit',
+            'supports' => array('mode' => false, 'anchor' => true),
+        ));
     }
 }
 add_action('acf/init', 'acf_blocks');
