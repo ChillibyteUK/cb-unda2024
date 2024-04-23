@@ -16,10 +16,12 @@ function split_lines($content)
     return $content;
 }
 
-add_shortcode('contact_address', function () {
+add_shortcode('contact_address', 'contact_address');
+
+function contact_address() {
     $output = get_field('contact_address', 'options');
     return $output;
-});
+}
 
 add_shortcode('contact_phone', 'contact_phone');
 function contact_phone() {
@@ -46,7 +48,9 @@ add_shortcode('social_in_icon', function () {
     return;
 });
 
-add_shortcode('social_icons', function () {
+add_shortcode('social_icons', 'social_icons');
+
+function social_icons() {
     
     $s = get_field('socials', 'options') ?? null;
 
@@ -61,13 +65,13 @@ add_shortcode('social_icons', function () {
         $output .= '<a href="' . $s['facebook_url'] . '" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>';
     }
     if ($s['twitter_url'] ?? null) {
-        $output .= '<a href="' . $s['twitter_url'] . '" target="_blank"><i class="fa-brands fa-twitter"></i></a>';
+        $output .= '<a href="' . $s['twitter_url'] . '" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>';
     }
     $output .= '</div>';
 
     return $output;
 
-});
+}
 
 /**
  * Grab the specified data like Thumbnail URL of a publicly embeddable video hosted on Vimeo.
