@@ -61,13 +61,13 @@ function social_icons($size = null) {
         $output .= '<a href="' . $s['linkedin_url'] . '" target="_blank"><i class="fa-brands fa-linkedin-in ' . $size . '"></i></a>';
     }
     if ($s['instagram_url'] ?? null) {
-        $output .= '<a href="' . $s['instagram_url'] . '" target="_blank"><i class="fa-brands fa-instagram"></i></a>';
+        $output .= '<a href="' . $s['instagram_url'] . '" target="_blank"><i class="fa-brands fa-instagram ' . $size . '"></i></a>';
     }
     if ($s['facebook_url'] ?? null) {
-        $output .= '<a href="' . $s['facebook_url'] . '" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>';
+        $output .= '<a href="' . $s['facebook_url'] . '" target="_blank"><i class="fa-brands fa-facebook-f ' . $size . '"></i></a>';
     }
     if ($s['twitter_url'] ?? null) {
-        $output .= '<a href="' . $s['twitter_url'] . '" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>';
+        $output .= '<a href="' . $s['twitter_url'] . '" target="_blank"><i class="fa-brands fa-x-twitter ' . $size . '"></i></a>';
     }
     $output .= '</div>';
 
