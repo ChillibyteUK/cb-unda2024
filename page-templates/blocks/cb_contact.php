@@ -3,9 +3,9 @@
         <div class="col-md-4">
             <h2>Contact Unda</h2>
             <ul class="fa-ul">
-                <li><span class="fa-li"><i class="fa-solid fa-phone"></i></span> <?=contact_phone()?></li>
-                <li><span class="fa-li"><i class="fa-solid fa-envelope"></i></span> <?=contact_email()?></li>
-                <li><span class="fa-li"><i class="fa-solid fa-map-marker-alt"></i></span> <?=contact_address()?></li>
+                <li class="mb-2"><span class="fa-li"><i class="fa-solid fa-phone"></i></span> <?=contact_phone()?></li>
+                <li class="mb-2"><span class="fa-li"><i class="fa-solid fa-envelope"></i></span> <?=contact_email()?></li>
+                <li class="mb-2"><span class="fa-li"><i class="fa-solid fa-map-marker-alt"></i></span> <?=contact_address()?></li>
             </ul>
             <h3>Connect</h3>
             <?=social_icons()?>
