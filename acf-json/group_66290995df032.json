@@ -16,7 +16,7 @@
                 "class": "",
                 "id": ""
             },
-            "message": "Presents links to all sub pages of \/flood-area-information\/\r\nAdd any other locations below, which will display as plain text.",
+            "message": "Presents links to immediate child pages of the current page.\r\nAdd any other locations below, which will display as plain text.",
             "new_lines": "wpautop",
             "esc_html": 0
         },
@@ -59,5 +59,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1713965546
+    "modified": 1713968653
 }
