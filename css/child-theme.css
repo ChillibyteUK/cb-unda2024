@@ -21875,6 +21875,10 @@ a {
   color: var(--col-light);
 }
 
+.wp-block-quote > .container-xl > p {
+  border-left: 2px solid var(--col-orange-400);
+}
+
 /*
 var all = document.getElementsByTagName("*"), i = 0, rect, docWidth = document.documentElement.offsetWidth;
 for (; i < all.length; i++) {

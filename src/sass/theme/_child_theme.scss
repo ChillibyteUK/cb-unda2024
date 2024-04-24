@@ -104,6 +104,10 @@ a {
     }
 }
 
+.wp-block-quote > .container-xl > p {
+    border-left: 2px solid var(--col-orange-400);
+}
+
 // show stuff that overflows horizontally
 // * {
 //     outline: 1px solid #f00 !important;
