@@ -105,7 +105,8 @@ a {
 }
 
 .wp-block-quote > .container-xl > p {
-    border-left: 2px solid var(--col-orange-400);
+    border-left: 4px solid var(--col-orange-400);
+    padding-left: 1rem;
 }
 
 // show stuff that overflows horizontally
