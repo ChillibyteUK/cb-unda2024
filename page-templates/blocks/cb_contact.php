@@ -8,7 +8,7 @@
                 <li class="mb-2"><span class="fa-li"><i class="fa-solid fa-map-marker-alt"></i></span> <?=contact_address()?></li>
             </ul>
             <h3>Connect</h3>
-            <?=social_icons()?>
+            <?=social_icons('fa-2x')?>
         </div>
         <div class="col-md-8">
             <iframe src="<?=get_field('maps_url','options')?>" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>

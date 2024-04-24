@@ -50,13 +50,15 @@ add_shortcode('social_in_icon', function () {
 
 add_shortcode('social_icons', 'social_icons');
 
-function social_icons() {
+function social_icons($size = null) {
     
     $s = get_field('socials', 'options') ?? null;
 
+    $size = $size ?? null;
+
     $output = '<div class="social_icons">';
     if ($s['linkedin_url'] ?? null) {
-        $output .= '<a href="' . $s['linkedin_url'] . '" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>';
+        $output .= '<a href="' . $s['linkedin_url'] . '" target="_blank"><i class="fa-brands fa-linkedin-in ' . $size . '"></i></a>';
     }
     if ($s['instagram_url'] ?? null) {
         $output .= '<a href="' . $s['instagram_url'] . '" target="_blank"><i class="fa-brands fa-instagram"></i></a>';
