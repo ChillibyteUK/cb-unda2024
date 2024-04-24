@@ -15,6 +15,15 @@ function split_lines($content)
     $content = preg_replace('/<br \/>/', '<br>&nbsp;<br>', $content);
     return $content;
 }
+function split_lines_to_array($content)
+{   
+    $arr = array();
+    $content = explode('<br />', $content);
+    foreach ($content as $c) {
+        $arr[$c] = $c;
+    }
+    return $arr;
+}
 
 add_shortcode('contact_address', 'contact_address');
 

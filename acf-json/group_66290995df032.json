@@ -1,0 +1,63 @@
+{
+    "key": "group_66290995df032",
+    "title": "CB Locations",
+    "fields": [
+        {
+            "key": "field_66290996f77dc",
+            "label": "CB Locations",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Presents links to all sub pages of \/flood-area-information\/\r\nAdd any other locations below, which will display as plain text.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_662909d3f77dd",
+            "label": "Additional Locations",
+            "name": "additional_locations",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "One per line",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "rows": 3,
+            "placeholder": "",
+            "new_lines": "br"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/cb-locations"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1713965546
+}
