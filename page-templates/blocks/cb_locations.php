@@ -1,4 +1,7 @@
-<section class="locations">
+<?php
+$class = $block['className'] ?? 'py-5';
+?>
+<section class="locations <?=$class?>">
     <div class="container-xl">
         <?php
         $parent_id = get_the_ID();
