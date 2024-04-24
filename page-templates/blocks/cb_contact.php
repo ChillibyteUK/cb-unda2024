@@ -14,7 +14,7 @@
             <iframe src="<?=get_field('maps_url','options')?>" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
-    <h2>Start a Quote</h2>
+    <h2 class="text-center">Start a Quote</h2>
     <div class="w-md-75 w-lg-50 mx-auto">
     <?php
     $form = get_field('contact_form_id','options') ?? null;
