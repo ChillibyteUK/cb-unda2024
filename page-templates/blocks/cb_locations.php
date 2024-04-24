@@ -1,5 +1,5 @@
 <?php
-$class = $block['className'] ?? 'py-5';
+$class = $block['className'] ?? 'pb-5';
 ?>
 <section class="locations <?=$class?>">
     <div class="container-xl">
