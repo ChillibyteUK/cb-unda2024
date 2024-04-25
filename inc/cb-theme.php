@@ -196,6 +196,15 @@ add_filter(
 
             array_splice( $links, 1, -2, $breadcrumb );
         }
+        if ( is_singular( 'career' ) ) {
+            // $t = get_the_category($post->ID);
+            $breadcrumb[] = array(
+                'url' => '/careers/',
+                'text' => 'Careers',
+            );
+
+            array_splice( $links, 1, -2, $breadcrumb );
+        }
         return $links;
     }
 );
