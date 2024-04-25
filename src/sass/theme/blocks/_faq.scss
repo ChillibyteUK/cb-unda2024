@@ -1,0 +1,38 @@
+.faq_block {
+
+    .accordion-item {
+        width: 100%;
+        position: relative;
+        margin-bottom: 10px;
+        background-color: var(--col-grey-200);
+        padding-inline: 1rem;
+    }
+
+    .accordion-head {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) min-content;
+        position: relative;
+        padding: 0.5rem 0;
+        cursor: pointer;
+        font-weight: 500;
+        font-size: 1.2rem;
+    }
+
+    .accordion-head>div {
+        align-self: center;
+    }
+
+    .accordion-head::after {
+        content: "\f106";
+        display: block;
+        position: relative;
+        align-self: center;
+        transition: all 0.3s ease;
+        font-family: "Font Awesome 6 Free";
+        font-weight: 600;
+        color: var(--col-orange-400);
+    }
+    .accordion-collapse.collapsed.accordion-head::after {
+        transform: rotate(-180deg);
+    }
+}

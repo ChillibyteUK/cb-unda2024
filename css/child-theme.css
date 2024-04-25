@@ -21235,7 +21235,7 @@ body {
   font-size: var(--fs-400);
 }
 
-h1, .h1, h2, .h2, h3, .h3 {
+h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
   font-family: var(--ff-headings);
   text-wrap: balance;
   font-weight: var(--fw-700);
@@ -21254,6 +21254,11 @@ h2, .h2 {
 
 h3, .h3 {
   font-size: var(--fs-600);
+  line-height: var(--lh-700);
+}
+
+h4, .h4 {
+  font-size: var(--fs-500);
   line-height: var(--lh-700);
 }
 
@@ -21281,20 +21286,6 @@ strong {
 
 .fs-300 {
   font-size: var(--fs-300);
-}
-
-.half-line {
-  position: relative;
-  padding-bottom: 1rem;
-  margin-bottom: 1rem;
-}
-.half-line::after {
-  content: "";
-  position: absolute;
-  width: 6rem;
-  border-bottom: 1px solid var(--col-blue-900);
-  bottom: 0;
-  left: 0;
 }
 
 .bg-black {
@@ -21790,6 +21781,39 @@ footer .cb:hover {
 }
 .cta .h2 {
   color: var(--col-white);
+}
+
+.faq_block .accordion-item {
+  width: 100%;
+  position: relative;
+  margin-bottom: 10px;
+  background-color: var(--col-grey-200);
+  padding-inline: 1rem;
+}
+.faq_block .accordion-head {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) min-content;
+  position: relative;
+  padding: 0.5rem 0;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+.faq_block .accordion-head > div {
+  align-self: center;
+}
+.faq_block .accordion-head::after {
+  content: "\f106";
+  display: block;
+  position: relative;
+  align-self: center;
+  transition: all 0.3s ease;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  color: var(--col-orange-400);
+}
+.faq_block .accordion-collapse.collapsed.accordion-head::after {
+  transform: rotate(-180deg);
 }
 
 body {
