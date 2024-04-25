@@ -23,25 +23,6 @@
             "new_lines": ""
         },
         {
-            "key": "field_63ca9f3b71201",
-            "label": "Job Location",
-            "name": "",
-            "aria-label": "",
-            "type": "message",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "message": "",
-            "new_lines": "wpautop",
-            "esc_html": 0,
-            "acfe_field_group_condition": 0
-        },
-        {
             "key": "field_63ca9f5071202",
             "label": "Salary",
             "name": "",
@@ -125,5 +106,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1714040625
+    "modified": 1714040715
 }
