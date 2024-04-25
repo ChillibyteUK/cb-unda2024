@@ -9,7 +9,7 @@ get_header();
         <div class="row">
             <div class="col-lg-8">
                 <h1><?=get_the_title()?></h1>
-                <a class="btn btn-primary mt-4" href="mailto:<?=get_field('contact_email','options')?>?subject=<?=get_the_title()?>">Apply Now</a>
+                <a class="btn btn-primary mt-4" href="mailto:<?=get_field('careers_email','options')?>?subject=<?=get_the_title()?>">Apply Now</a>
             </div>
         </div>
     </div>
@@ -27,7 +27,7 @@ get_header();
                 <?php
                 the_content();
                 ?>
-                <a class="btn btn-primary mt-4" href="mailto:<?=get_field('contact_email','options')?>?subject=<?=get_the_title()?>">Apply Now</a>
+                <a class="btn btn-primary mt-4" href="mailto:<?=get_field('careers_email','options')?>?subject=<?=get_the_title()?>">Apply Now</a>
             </div>
         </div>
     </div>
