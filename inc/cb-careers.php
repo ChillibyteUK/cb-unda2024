@@ -9,14 +9,14 @@ function jobs_func($atts) {
     ob_start();
     $q = new WP_Query(array(
         'posts_per_page' => -1,
-        'post_type' => 'career',
+        'post_type' => 'careers',
         'post_status' => 'publish'
     ));
 
     if ($q->have_posts()) {
         ?>
 <section class="joblistings">
-    <div class="container-xl pt-4 pb-5">
+    <div class="container-xl py-4">
         <?php
         while ($q->have_posts()) {
             $q->the_post();
@@ -29,7 +29,7 @@ function jobs_func($atts) {
                         <strong>Posted:</strong> <?=get_the_date()?>
                     </div>
                 </div>
-                <div class="job-salary"><strong>Salary:</strong> <?php
+                <div class="text-orange-400"><strong>Salary:</strong> <?php
                     echo '£' . number_format(get_field('minimum_salary'));
                     if (get_field('maximum_salary') ?? null) {
                         echo ' - £' . number_format(get_field('maximum_salary'));
@@ -46,7 +46,7 @@ function jobs_func($atts) {
     }
     else {
         ?>
-        We do not have any positions available at this time. Check back later to see new postings.
+        <div class="pt-3 py-4 fw-700">We do not have any positions available at this time. Check back later to see new postings.</div>
         <?php
     }
     

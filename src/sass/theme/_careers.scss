@@ -1,0 +1,11 @@
+.joblisting {
+    display: block;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: var(--shadow-out);
+    transition: box-shadow var(--transition), transform var(--transition);
+    &:hover {
+        box-shadow: var(--shadow-in);
+        transform: translateY(2px);
+    }
+}
