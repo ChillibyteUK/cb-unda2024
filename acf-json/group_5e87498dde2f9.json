@@ -93,7 +93,7 @@
             {
                 "param": "post_type",
                 "operator": "==",
-                "value": "career"
+                "value": "careers"
             }
         ]
     ],
@@ -106,5 +106,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1714040715
+    "modified": 1714042651
 }
