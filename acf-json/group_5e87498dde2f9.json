@@ -23,44 +23,6 @@
             "new_lines": ""
         },
         {
-            "key": "field_5e8749c50689d",
-            "label": "Employment Type",
-            "name": "employmenttype",
-            "aria-label": "",
-            "type": "select",
-            "instructions": "Full-time",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "choices": {
-                "FULL_TIME": "Full-time",
-                "PART_TIME": "Part-time",
-                "CONTRACTOR": "Contractor",
-                "TEMPORARY": "Temporary",
-                "INTERN": "Intern",
-                "VOLUNTEER": "Volunteer",
-                "PER_DIEM": "Per diem",
-                "OTHER": "Other"
-            },
-            "default_value": "FULL_TIME",
-            "allow_null": 0,
-            "multiple": 0,
-            "ui": 0,
-            "return_format": "value",
-            "ajax": 0,
-            "placeholder": "",
-            "allow_custom": 0,
-            "search_placeholder": "",
-            "prepend": "",
-            "append": "",
-            "min": "",
-            "max": ""
-        },
-        {
             "key": "field_63ca9f3b71201",
             "label": "Job Location",
             "name": "",
@@ -77,123 +39,6 @@
             "message": "",
             "new_lines": "wpautop",
             "esc_html": 0,
-            "acfe_field_group_condition": 0
-        },
-        {
-            "key": "field_6411a36c087be",
-            "label": "Location-based or Remote",
-            "name": "location-based_or_remote",
-            "aria-label": "",
-            "type": "radio",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "relevanssi_exclude": 0,
-            "choices": {
-                "Office-based": "Office-based",
-                "Remote": "Remote"
-            },
-            "default_value": "Remote",
-            "return_format": "value",
-            "allow_null": 0,
-            "other_choice": 0,
-            "layout": "vertical",
-            "acfe_field_group_condition": 0,
-            "save_other_choice": 0
-        },
-        {
-            "key": "field_5e874a9d068a1",
-            "label": "Street Address",
-            "name": "streetaddress",
-            "aria-label": "",
-            "type": "text",
-            "instructions": "14-16 Dowgate Hill",
-            "required": 0,
-            "conditional_logic": [
-                [
-                    {
-                        "field": "field_6411a36c087be",
-                        "operator": "==",
-                        "value": "Office-based"
-                    }
-                ]
-            ],
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "relevanssi_exclude": 0,
-            "default_value": "14-16 Dowgate Hill",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "acfe_field_group_condition": 0
-        },
-        {
-            "key": "field_5e874aad068a2",
-            "label": "Address Region",
-            "name": "addressregion",
-            "aria-label": "",
-            "type": "text",
-            "instructions": "London",
-            "required": 0,
-            "conditional_logic": [
-                [
-                    {
-                        "field": "field_6411a36c087be",
-                        "operator": "==",
-                        "value": "Office-based"
-                    }
-                ]
-            ],
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "relevanssi_exclude": 0,
-            "default_value": "London",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "acfe_field_group_condition": 0
-        },
-        {
-            "key": "field_5e874abb068a3",
-            "label": "Postal Code",
-            "name": "postalcode",
-            "aria-label": "",
-            "type": "text",
-            "instructions": "EC4R 2SU",
-            "required": 0,
-            "conditional_logic": [
-                [
-                    {
-                        "field": "field_6411a36c087be",
-                        "operator": "==",
-                        "value": "Office-based"
-                    }
-                ]
-            ],
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "relevanssi_exclude": 0,
-            "default_value": "EC4R 2SU",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
             "acfe_field_group_condition": 0
         },
         {
@@ -280,5 +125,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1714040181
+    "modified": 1714040625
 }

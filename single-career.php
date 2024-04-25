@@ -71,7 +71,7 @@ get_header();
         },
         "datePosted": "<?=get_the_date('Y-m-d')?>",
         "validThrough": "2030-01-01T00:00",
-        "employmentType": "<?=get_field('employmenttype', get_the_ID())?>",
+        "employmentType": "FULL_TIME",
         "baseSalary": {
             "@type": "MonetaryAmount",
             "currency": "GBP",
