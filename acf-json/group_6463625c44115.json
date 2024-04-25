@@ -118,26 +118,6 @@
             "append": ""
         },
         {
-            "key": "field_66015d5171ee7",
-            "label": "Contact Intro",
-            "name": "contact_intro",
-            "aria-label": "",
-            "type": "textarea",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "maxlength": "",
-            "rows": "",
-            "placeholder": "",
-            "new_lines": ""
-        },
-        {
             "key": "field_66015d7671eea",
             "label": "Contact Form ID",
             "name": "contact_form_id",
@@ -294,5 +274,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1714040913
+    "modified": 1714040952
 }
