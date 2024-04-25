@@ -21555,6 +21555,9 @@ footer .cb:hover {
   background-color: var(--col-grey-400);
   min-height: 380px;
   color: var(--col-green-400);
+  background-size: min(80vw, 490px) auto;
+  background-repeat: no-repeat;
+  background-position: 90% 90%;
 }
 .hero h1, .hero .h1 {
   font-size: var(--fs-800);
