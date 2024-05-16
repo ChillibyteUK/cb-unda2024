@@ -21392,6 +21392,7 @@ header .prenav {
 }
 .header #navbar,
 header #navbar {
+  padding-block: 1rem;
   background-color: var(--col-grey-400);
 }
 .header #navbar a.nav-link,
@@ -21532,14 +21533,16 @@ footer .cb:hover {
 .home_hero__content {
   max-width: 70ch;
   margin-inline: auto;
-  margin-bottom: 1rem;
+  margin-block: 2rem;
 }
 .home_hero__graphic {
   background-image: url(../img/Unda_Landscape_Illustration.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 400px;
+  aspect-ratio: 300/53;
+  width: 100%;
+  margin-top: 3rem;
 }
 
 .hero {

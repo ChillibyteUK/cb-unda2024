@@ -8,13 +8,15 @@
     &__content {
         max-width: 70ch;
         margin-inline: auto;
-        margin-bottom: 1rem;
+        margin-block: 2rem;
     }
     &__graphic {
         background-image: url(../img/Unda_Landscape_Illustration.svg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        height: 400px;
+        aspect-ratio: 300 / 53;
+        width: 100%;
+        margin-top: 3rem;
     }
 }
