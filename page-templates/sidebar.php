@@ -50,7 +50,7 @@
                 }
                 ?>
             </div>
-            <div class="col-md-4">
+            <div class="d-none d-md-block col-md-4">
                 <?php
                 if (is_active_sidebar('cta-sidebar')) {
                     dynamic_sidebar( 'cta-sidebar' );

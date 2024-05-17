@@ -21425,6 +21425,9 @@ footer .colophon {
   font-size: var(--fs-300);
   color: var(--col-grey-200);
 }
+footer .footer__logo {
+  width: min(300px, 90vw);
+}
 footer .cb {
   content: url(../img/cb.png);
   transition: opacity 300ms ease;
