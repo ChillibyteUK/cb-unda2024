@@ -23,7 +23,7 @@
 
     foreach ( $blocks as $block ) {
 
-        echo '<pre>' . $block['blockName'] . '</pre>';
+        // echo '<pre>' . $block['blockName'] . '</pre>';
 
         if ( $block['blockName'] === 'acf/cb-hero' ) {
             $hero_block = $block;
