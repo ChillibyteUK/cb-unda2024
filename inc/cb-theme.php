@@ -54,15 +54,17 @@ if (function_exists('acf_add_options_page')) {
 
 function widgets_init()
 {
-    // register_sidebar(
-    //     array(
-    //         'name'          => __('Footer Col 1', 'cb-unda2024'),
-    //         'id'            => 'footer-1',
-    //         'description'   => __('Footer Col 1', 'cb-unda2024'),
-    //         'before_widget' => '<div id="%1$s" class="footer-widget %2$s">',
-    //         'after_widget'  => '</div>',
-    //     )
-    // );
+    register_sidebar(
+        array(
+            'name'          => __('CTA Sidebar', 'cb-unda2024'),
+            'id'            => 'cta-sidebar',
+            'description'   => __('Displayed in the CTA Sidebar template', 'cb-unda2024'),
+            'before_widget' => '<div id="%1$s" class="widget %2$s">',
+            'after_widget'  => '</div>',
+            'before_sidebar' => '<div id="%1$s" class="cta-sidebar %2$s">',
+            'after_sidebar'  => '</div>',
+        )
+    );
 
     register_nav_menus(array(
         'primary_nav' => __('Primary Nav', 'cb-unda2024'),

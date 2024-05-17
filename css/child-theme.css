@@ -21522,6 +21522,20 @@ footer .cb:hover {
   transform: translateY(2px);
 }
 
+.cta-sidebar {
+  position: sticky;
+  top: var(--h-top);
+  top: 3rem;
+  display: block;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: var(--col-grey-400);
+  text-align: center;
+  color: var(--col-green-400);
+  box-shadow: var(--shadow-in);
+  transition: box-shadow var(--transition), transform var(--transition);
+}
+
 .home_hero {
   background-color: var(--col-grey-400);
   color: var(--col-green-400);
