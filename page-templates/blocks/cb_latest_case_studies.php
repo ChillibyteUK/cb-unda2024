@@ -15,8 +15,8 @@ $class = $block['className'] ?? 'my-5';
             $q->the_post();
             $images = get_field('images', get_the_ID()) ?? null;
             ?>
-        <div class="col-md-4">
-            <a href="<?=get_the_permalink()?>" class="latest_cs__card" data-aos="fade" data-aos-delay="<?=$d?>">
+        <div class="col-md-4" data-aos="fade" data-aos-delay="<?=$d?>">
+            <a href="<?=get_the_permalink()?>" class="latest_cs__card">
                 <img src="<?=wp_get_attachment_image_url($images[0],'large')?>" alt="">
                 <div class="h3"><?=get_the_title()?></div>
                 <div class="text-end">
