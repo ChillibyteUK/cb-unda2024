@@ -11,21 +11,21 @@ $class = $block['className'] ?? 'my-5';
                     <div>A Flood Risk Assessment (FRA) will help you understand the risk of flooding to your site.</div>
                 </a>
             </div>
-            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="50">
                 <a class="services_list__item mb-3" href="/flood-risk-assessments/">
                     <img src="<?=get_stylesheet_directory_uri()?>/img/icons/reports-for-insurance.svg" alt="" class="services_list__icon">
                     <h2 class="h3">Reports for Insurance</h2>
                     <div>You may require a site specific FRA for insurance purposes.</div>
                 </a>
             </div>
-            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
                 <a class="services_list__item mb-3" href="/drainage-assessments/">
                     <img src="<?=get_stylesheet_directory_uri()?>/img/icons/drainage-strategy.svg" alt="" class="services_list__icon">
                     <h2 class="h3">Drainage Strategy</h2>
                     <div>A Drainage Strategy determines how surface water runoff will be managed.</div>
                 </a>
             </div>
-            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="150">
                 <a class="services_list__item mb-3" href="/contact-us/">
                     <img src="<?=get_stylesheet_directory_uri()?>/img/icons/contact-us.svg" alt="" class="services_list__icon">
                     <h2 class="h3">Contact Us Today</h2>

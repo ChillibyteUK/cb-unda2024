@@ -25,7 +25,7 @@ while ($q->have_posts()) {
         </a>
     </div>
     <?php
-    $d+=100;
+    $d+=50;
 }
         ?>
        </div>

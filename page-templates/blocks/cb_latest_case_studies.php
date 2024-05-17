@@ -25,7 +25,7 @@ $class = $block['className'] ?? 'my-5';
             </a>
         </div>
             <?php
-            $d+=100;
+            $d+=50;
         }
         ?>
         <div class="text-center"><a href="/projects/" class="btn btn-primary">View All</a></div>

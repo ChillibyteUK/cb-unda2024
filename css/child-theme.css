@@ -21544,9 +21544,6 @@ footer .cb:hover {
   color: var(--col-green-400);
   overflow: hidden;
 }
-.home_hero .container-xl {
-  min-height: 400px;
-}
 .home_hero h1, .home_hero .h1 {
   font-size: var(--fs-900);
   margin-bottom: 1rem;
