@@ -61,7 +61,7 @@ function widgets_init()
             'description'   => __('Displayed in the CTA Sidebar template', 'cb-unda2024'),
             'before_widget' => '<div id="%1$s" class="widget %2$s">',
             'after_widget'  => '</div>',
-            'before_sidebar' => '<div id="%1$s" class="cta-sidebar %2$s">',
+            'before_sidebar' => '<div data-aos="fade-up" id="%1$s" class="cta-sidebar %2$s">',
             'after_sidebar'  => '</div>',
         )
     );

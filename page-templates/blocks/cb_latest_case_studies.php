@@ -10,12 +10,13 @@ $class = $block['className'] ?? 'my-5';
             'post_type' => 'project',
             'posts_per_page' => 3
         ));
+        $d = 0;
         while ($q->have_posts()) {
             $q->the_post();
             $images = get_field('images', get_the_ID()) ?? null;
             ?>
         <div class="col-md-4">
-            <a href="<?=get_the_permalink()?>" class="latest_cs__card">
+            <a href="<?=get_the_permalink()?>" class="latest_cs__card" data-aos="fade" data-aos-delay="<?=$d?>">
                 <img src="<?=wp_get_attachment_image_url($images[0],'large')?>" alt="">
                 <div class="h3"><?=get_the_title()?></div>
                 <div class="text-end">
@@ -24,6 +25,7 @@ $class = $block['className'] ?? 'my-5';
             </a>
         </div>
             <?php
+            $d+=100;
         }
         ?>
         <div class="text-center"><a href="/projects/" class="btn btn-primary">View All</a></div>

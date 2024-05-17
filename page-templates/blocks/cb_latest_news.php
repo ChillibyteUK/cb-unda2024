@@ -8,11 +8,12 @@ $q = new WP_Query(array(
     'post_status' => 'publish',
     'posts_per_page' => 3,
 ));
+$d=0;
 while ($q->have_posts()) {
     $q->the_post();
     ?>
     <div class="col-md-4">
-        <a href="<?=get_the_permalink()?>" class="latest_news__card">
+        <a href="<?=get_the_permalink()?>" class="latest_news__card" data-aos="fade" data-aos-delay="<?=$d?>">
             <img src="<?=get_the_post_thumbnail_url(get_the_ID(), 'large')?>" alt="">
             <div>
                 <div class="fs-300 text-orange-400"><?=get_the_date('jS F, Y')?></div>
@@ -24,6 +25,7 @@ while ($q->have_posts()) {
         </a>
     </div>
     <?php
+    $d+=100;
 }
         ?>
        </div>

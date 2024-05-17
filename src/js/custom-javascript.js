@@ -1,5 +1,12 @@
 // Add your custom JS here.
 
+window.addEventListener("load", function () {
+  AOS.init({
+    duration: 1000,
+    once: true,
+  });
+});
+
 const lightbox = GLightbox();
 
 document.addEventListener('DOMContentLoaded', function() {

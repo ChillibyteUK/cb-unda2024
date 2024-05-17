@@ -6745,6 +6745,12 @@
 
 	// Add your custom JS here.
 
+	window.addEventListener("load", function () {
+	  AOS.init({
+	    duration: 1000,
+	    once: true
+	  });
+	});
 	GLightbox();
 	document.addEventListener('DOMContentLoaded', function () {
 	  const navLinks = document.querySelectorAll('.nav-link');

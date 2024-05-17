@@ -1,11 +1,20 @@
 .hero {
     background-color: var(--col-grey-400);
-    min-height: 380px;
+    height: 380px;
     color: var(--col-green-400);
-    background-size: min(80vw,490px) auto;
-    background-repeat: no-repeat;
-    background-position: 90% 90%;
+    // background-size: min(80vw,490px) auto;
+    // background-repeat: no-repeat;
+    // background-position: 90% 90%;
+    position: relative;
+    isolation: isolate;
     h1 {
         font-size: var(--fs-800);
+    }
+    &__bg {
+        position: absolute;
+        bottom: 1rem;
+        right: 1rem;
+        width: min(80vw, 490px);
+        z-index: -1;
     }
 }
