@@ -19,12 +19,19 @@
     // Separate the hero block and the other blocks.
     $hero_block = null;
     $other_blocks = array();
+    $after_blocks = array();
 
     foreach ( $blocks as $block ) {
 
+        echo '<pre>' . $block['blockName'] . '</pre>';
+
         if ( $block['blockName'] === 'acf/cb-hero' ) {
             $hero_block = $block;
-        } else {
+        }
+        elseif ( $block['blockName'] === 'acf/cb-cta' ) {
+            $after_blocks[] = $block;
+        }
+        else {
             $other_blocks[] = $block;
         }
     }
@@ -52,6 +59,11 @@
             </div>
         </div>
     </div>
+    <?php
+    foreach ( $after_blocks as $block ) {
+        echo render_block( $block );
+    }
+    ?>
  </main>
  
  <?php

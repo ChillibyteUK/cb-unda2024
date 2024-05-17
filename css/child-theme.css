@@ -21525,7 +21525,7 @@ footer .cb:hover {
 .cta-sidebar {
   position: sticky;
   top: var(--h-top);
-  top: 3rem;
+  top: 5rem;
   display: block;
   padding: 1rem;
   border-radius: 1rem;
