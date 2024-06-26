@@ -49,9 +49,11 @@ a.anchor {
 @media (min-width:992px) {
     .cols-lg-2 {
         columns: 2;
+        column-gap: 3rem;
     }
     .cols-lg-3 {
         columns: 3;
+        column-gap: 3rem;
     }
 }
 .share-icons {

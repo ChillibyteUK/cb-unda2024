@@ -21889,10 +21889,14 @@ a.anchor {
   .cols-lg-2 {
     -moz-columns: 2;
     columns: 2;
+    -moz-column-gap: 3rem;
+    column-gap: 3rem;
   }
   .cols-lg-3 {
     -moz-columns: 3;
     columns: 3;
+    -moz-column-gap: 3rem;
+    column-gap: 3rem;
   }
 }
 .share-icons {
