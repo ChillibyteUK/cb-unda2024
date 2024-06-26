@@ -21844,6 +21844,35 @@ footer .cb:hover {
   transform: rotate(-180deg);
 }
 
+.stat_spinner__grid {
+  display: grid;
+  gap: 3rem;
+}
+@media (min-width: 992px) {
+  .stat_spinner__grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+.stat_spinner__stat {
+  display: grid;
+  grid-template-rows: 1fr auto 1fr;
+}
+.stat_spinner__title, .stat_spinner__desc {
+  text-align: center;
+  font-size: var(--fs-400);
+  font-weight: var(--fw-700);
+}
+.stat_spinner__value {
+  color: var(--col-orange-400);
+  font-size: var(--fs-800);
+  font-weight: var(--fw-700);
+  line-height: 1.2;
+  text-align: center;
+}
+.stat_spinner__value .counter {
+  display: inline;
+}
+
 body {
   background-color: var(--col-white);
   color: var(--col-black);
