@@ -21207,7 +21207,7 @@ readers do not read off random characters that represent icons */
   font-family: "Blackler Pro Display";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/Blacker-Pro-Display-Bold.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("../fonts/BlackerProDis-Bd.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* GT Walsheim Light - latin */
 @font-face {
