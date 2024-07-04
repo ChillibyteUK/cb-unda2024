@@ -112,11 +112,23 @@ if ($query->have_posts()) {
         $cats = get_the_category();
         ?>
         <div class="news_row mb-4">
-            <a href="<?=get_the_permalink()?>">
-                <h3 class="text-green-400 h5 mb-2">
-                    <?=get_the_title()?>
-                </h3>
-                <div class="news__excerpt text-grey-900 mb-2"><?=wp_trim_words(get_the_content(),40)?></div>
+            <a href="<?=get_the_permalink()?>" class="news__link">
+                <div class="news__image_container">
+                    <?php
+                    if (get_the_post_thumbnail(get_the_ID()) ?? null) {
+                        echo get_the_post_thumbnail(get_the_ID(),'medium',array('class'=>'news__image'));
+                    }
+                    else {
+                        echo '<img src="' . get_stylesheet_directory_uri() . '/img/blog-placeholder.png" class="news__image">';
+                    }
+                    ?>
+                </div>
+                <div>
+                    <h3 class="text-green-400 h5 mb-2">
+                        <?=get_the_title()?>
+                    </h3>
+                    <div class="news__excerpt text-black mb-2"><?=wp_trim_words(get_the_content(),40)?></div>
+                </div>
             </a>
             <div class="news__meta d-flex align-items-center fs-300">
                 <div>Posted on <?=$the_date?></div>

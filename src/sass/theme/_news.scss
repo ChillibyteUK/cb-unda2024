@@ -78,3 +78,28 @@
         }
     }
 }
+
+.news_row {
+
+    .news__link {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 180px auto;
+        width: 100%;
+        margin-bottom: 1rem;
+        &:hover {
+            .news__image {
+                scale: 1.1;
+            }
+        }
+    }
+    .news__image_container {
+        overflow: hidden;
+    }
+    .news__image {
+        object-fit: cover;
+        aspect-ratio: 4 / 3;
+        width: 100%;
+        transition: scale var(--transition);
+    }
+}

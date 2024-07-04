@@ -3,8 +3,8 @@
 defined('ABSPATH') || exit;
 get_header();
 $img = get_the_post_thumbnail_url(get_the_ID(), 'full') ?? null;
+// <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.0.0/css/flag-icons.min.css" />
 ?>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.0.0/css/flag-icons.min.css" />
 <main id="main" class="blog">
     <?php
     $content = get_the_content();
@@ -78,6 +78,9 @@ while ($r->have_posts()) {
     ?>
                 <a class="related__card d-block mb-3"
                     href="<?=get_the_permalink()?>">
+                    <div class="related__image_container mb-2">
+                        <?=get_the_post_thumbnail(get_the_ID(),'medium',array('class' => 'related__image'))?>
+                    </div>
                     <div class="related__date"><?=get_the_date('jS F, Y')?></div>
                     <h3 class="related__title">
                         <?=get_the_title()?></h3>
@@ -86,9 +89,13 @@ while ($r->have_posts()) {
                 <?php
 }
 ?>
+                <div class="text-center">
+                    <a href="/contact-us/" class="btn btn-primary aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">Start a Quote</a>
+                </div>
             </div>
         </div>
     </div>
+    <?php get_template_part('page-templates/blocks/cb_cta'); ?>
 </main>
 <?php
 get_footer();
