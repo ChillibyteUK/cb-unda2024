@@ -15,10 +15,13 @@
         </div>
     </div>
     <h2 class="text-center">Start a Quote</h2>
-    <div class="w-md-75 w-lg-50 mx-auto">
+    <style>
+.gfmc-container {
+    column-gap: 2rem;
+}
+    </style>
     <?php
     $form = get_field('contact_form_id','options') ?? null;
     echo do_shortcode('[gravityform id="' . $form . '" title="false"]');
     ?>
-    </div>
 </div>
