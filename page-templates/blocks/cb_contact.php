@@ -17,7 +17,7 @@
     <h2 class="text-center">Start a Quote</h2>
     <style>
 .gfmc-container {
-    column-gap: 2rem;
+    gap: 2rem !important;
 }
 .gfmc-column {
     padding: 1rem;
