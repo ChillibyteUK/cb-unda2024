@@ -19,6 +19,10 @@
 .gfmc-container {
     column-gap: 2rem;
 }
+.gfmc-column {
+    padding: 1rem;
+    background-color: var(--col-grey-400);
+}
     </style>
     <?php
     $form = get_field('contact_form_id','options') ?? null;
