@@ -21564,6 +21564,18 @@ footer .cb:hover {
   background-color: var(--col-grey-400);
   color: var(--col-green-400);
   overflow: hidden;
+  isolation: isolate;
+  position: relative;
+  height: min(100vh, 600px);
+}
+@media (min-width: 992px) {
+  .home_hero {
+    height: 100vh;
+  }
+}
+.home_hero .container-xl {
+  position: relative;
+  z-index: 1;
 }
 .home_hero h1, .home_hero .h1 {
   font-size: var(--fs-900);
@@ -21574,16 +21586,85 @@ footer .cb:hover {
   margin-inline: auto;
   margin-block: 2rem;
 }
-.home_hero__graphic {
-  background-image: url(../img/Unda_Landscape_Illustration.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  aspect-ratio: 300/53;
+.home_hero__layers {
+  position: absolute;
+  bottom: 0;
   width: 100%;
-  margin-top: 3rem;
+  height: 100%;
+  display: grid;
+  grid-template-areas: "stack";
+  grid-template-rows: 1fr;
+  isolation: isolate;
+}
+.home_hero__layers > * {
+  grid-area: stack;
+  position: absolute;
+  bottom: -100%;
+  left: 50%;
+  width: 576px;
+  height: auto;
+  transform: translateX(-50%);
+  animation: slideUp 2s forwards;
+}
+@media (min-width: 576px) {
+  .home_hero__layers > * {
+    width: 768px;
+  }
+}
+@media (min-width: 768px) {
+  .home_hero__layers > * {
+    width: 1000px;
+  }
+}
+@media (min-width: 992px) {
+  .home_hero__layers > * {
+    width: 1700px;
+  }
+}
+@media (min-width: 1700px) {
+  .home_hero__layers > * {
+    width: 100vw;
+    left: 0;
+    transform: none;
+  }
+}
+.home_hero #l7 {
+  z-index: 0;
+  animation-delay: 0s;
+}
+.home_hero #l6 {
+  z-index: 1;
+  animation-delay: 0.2s;
+}
+.home_hero #l5 {
+  z-index: 2;
+  animation-delay: 0.4s;
+}
+.home_hero #l4 {
+  z-index: 3;
+  animation-delay: 0.6s;
+}
+.home_hero #l3 {
+  z-index: 4;
+  animation-delay: 0.8s;
+}
+.home_hero #l2 {
+  z-index: 5;
+  animation-delay: 1s;
+}
+.home_hero #l1 {
+  z-index: 6;
+  animation-delay: 1.2s;
 }
 
+@keyframes slideUp {
+  from {
+    bottom: -100%;
+  }
+  to {
+    bottom: 0%;
+  }
+}
 .hero {
   background-color: var(--col-grey-400);
   height: 380px;
