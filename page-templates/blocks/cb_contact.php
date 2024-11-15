@@ -14,18 +14,4 @@
             <iframe src="<?=get_field('maps_url','options')?>" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
-    <h2 class="text-center">Start a Quote</h2>
-    <style>
-.gfmc-container {
-    gap: 2rem !important;
-}
-.gfmc-column {
-    padding: 1rem;
-    background-color: var(--col-grey-400);
-}
-    </style>
-    <?php
-    $form = get_field('contact_form_id','options') ?? null;
-    echo do_shortcode('[gravityform id="' . $form . '" title="false"]');
-    ?>
 </div>

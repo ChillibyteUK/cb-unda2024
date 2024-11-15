@@ -153,6 +153,16 @@ function cb_dashboard_widget_display()
 <?php
 }
 
+
+// fix annoying 6.7 scroll flicker
+add_action('admin_head', function(){
+    echo '<style>
+   .block-editor-page #wpwrap {
+       overflow-y: auto !important;
+   }
+   </style>';
+});
+
 // add_filter('template_include', function ($template) {
 //     if (is_archive()) { // Check if it's any type of archive (tag, category, date, custom post type)
 //         $index_template = locate_template('index.php');
