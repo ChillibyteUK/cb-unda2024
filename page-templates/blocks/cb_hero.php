@@ -1,8 +1,8 @@
-<section class="hero d-flex align-items-center">
-    <div class="container-xl">
-        <div class="row">
-            <div class="col-lg-8">
-                <h1 data-aos="fade-right"><?=get_field('title')?></h1>
+<section class="hero">
+    <div class="container-xl h-100">
+        <div class="row h-100">
+            <div class="col-lg-8 d-flex flex-column pt-4 pt-lg-0 align-items-center align-items-md-start justify-content-start justify-content-md-center">
+                <h1 data-aos="fade-right" class="text-center text-md-start"><?=get_field('title')?></h1>
                 <?php
                 $d = 0;
                 if (get_field('content') ?? null) {
@@ -15,19 +15,21 @@
                     $cta = get_field('cta');
                     $d+=100;
                     ?>
-                <a class="btn btn-primary mt-4" href="<?=$cta['url']?>" target="<?=$cta['target']?>" data-aos="fade-right" data-aos-delay="<?=$d?>"><?=$cta['title']?></a>
+                <a class="btn btn-primary mt-4 align-self-center align-self-md-start" href="<?=$cta['url']?>" target="<?=$cta['target']?>" data-aos="fade-right" data-aos-delay="<?=$d?>"><?=$cta['title']?></a>
                     <?php
+                }
+                ?>
+            </div>
+            <div class="col-lg-4 position-relative">
+                <?php
+                $img = wp_get_attachment_image(get_field('background'),'full',false,array('class' => 'hero__bg', 'data-aos' => 'fade-left')) ?? null;
+                if ($img) {
+                    echo $img;
                 }
                 ?>
             </div>
         </div>
     </div>
-    <?php
-    $img = wp_get_attachment_image(get_field('background'),'full',false,array('class' => 'hero__bg', 'data-aos' => 'fade-left')) ?? null;
-    if ($img) {
-        echo $img;
-    }
-    ?>
 </section>
 <section class="breadcrumbs pt-4 container-xl">
     <?php

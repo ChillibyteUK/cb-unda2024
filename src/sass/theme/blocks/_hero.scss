@@ -15,7 +15,17 @@
         position: absolute;
         bottom: 1rem;
         right: 1rem;
+
+        left: 1rem;
+        margin-inline: auto;
+
+        @media (min-width:768px) {
+            left: unset;
+        }
+
         width: min(80vw, 490px);
         z-index: -1;
+        max-height: 200px;
+        max-width: max-content;
     }
 }
