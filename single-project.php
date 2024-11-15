@@ -42,7 +42,7 @@ $img = get_the_post_thumbnail_url(get_the_ID(), 'full') ?? null;
             }
             ?>
             <div class="text-center py-4">
-                <a href="/contact-us/" class="btn btn-primary">Start a Quote</a>
+                <a href="/start-a-quote/" class="btn btn-primary">Start a Quote</a>
             </div>
         </div>
     </div>

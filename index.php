@@ -18,7 +18,7 @@ $date_to = filter_input(INPUT_POST, 'dateTo', FILTER_UNSAFE_RAW ) ?? null;
     <section class="hero d-flex align-items-center" style="background-image:url(<?=$bg?>)">
         <div class="container-xl my-auto">
             <h1>News</h1>
-            <a class="btn btn-primary mt-4" href="/contact-us/">Start a Quote</a>
+            <a class="btn btn-primary mt-4" href="/start-a-quote/">Start a Quote</a>
         </div>
     </section>
 
