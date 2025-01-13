@@ -7,7 +7,7 @@
                 <i class="fa-solid fa-check fa-2x text-orange-400"></i>
                 <div>
                     <h3>Free Appraisal</h3>
-                    <div>Free initial advice and appraisal over the phone from a friendly and experience Flood Risk Consultant.</div>
+                    <div>Free initial advice and appraisal over the phone from a friendly and experienced Flood Risk Consultant.</div>
                 </div>
             </div>
             <div class="col-md-4 usps__inner">
