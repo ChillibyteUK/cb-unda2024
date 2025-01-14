@@ -38,6 +38,7 @@ defined('ABSPATH') || exit;
                     &copy; <?=date('Y')?>  Unda Consulting Ltd. Registered in England, no 09360091. Registered Office 125 Noak Hill Road, Billericay, Essex, CM12 9UJ
                 </div>
                 <div class="col-md-2 w-100 w-md-auto d-flex align-items-center justify-content-center justify-content-md-end flex-wrap gap-1">
+                    <a href="/privacy-policy/">Privacy</a> &amp; <a href="/cookie-policy/">Cookies</a> | 
                     <a href="https://www.chillibyte.co.uk/" rel="nofollow noopener" target="_blank" class="cb"
                         title="Digital Marketing by Chillibyte"></a>
                 </div>
