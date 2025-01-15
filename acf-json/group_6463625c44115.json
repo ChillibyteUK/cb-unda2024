@@ -17,7 +17,8 @@
                 "id": ""
             },
             "placement": "top",
-            "endpoint": 0
+            "endpoint": 0,
+            "selected": 0
         },
         {
             "key": "field_6463628e4f7c9",
@@ -158,6 +159,26 @@
             "append": ""
         },
         {
+            "key": "field_678787be81e85",
+            "label": "Google Tag Manager",
+            "name": "gtm_property",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
             "key": "field_65fd926c54278",
             "label": "Socials",
             "name": "socials",
@@ -274,5 +295,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1714040952
+    "modified": 1736935369
 }
