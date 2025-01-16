@@ -28,9 +28,9 @@
         if ( $block['blockName'] === 'acf/cb-hero' ) {
             $hero_block = $block;
         }
-        elseif ( $block['blockName'] === 'acf/cb-cta' ) {
-            $after_blocks[] = $block;
-        }
+        // elseif ( $block['blockName'] === 'acf/cb-cta' ) {
+        //     $after_blocks[] = $block;
+        // }
         else {
             $other_blocks[] = $block;
         }

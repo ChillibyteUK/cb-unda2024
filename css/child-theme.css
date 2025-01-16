@@ -21923,6 +21923,11 @@ footer .cb:hover {
   color: var(--col-white);
 }
 
+.cta-inline {
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+}
+
 .faq_block .accordion-item {
   width: 100%;
   position: relative;

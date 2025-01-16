@@ -1,5 +1,9 @@
 <?php
 $class = $block['className'] ?? null;
+$template = get_page_template_slug();
+if ( $template == 'page-templates/sidebar.php' ) {
+    $class .= " cta-inline";
+}
 ?>
 <section class="cta py-5 <?=$class?>">
     <div class="container-xl d-flex flex-wrap justify-content-center align-items-center gap-4">
