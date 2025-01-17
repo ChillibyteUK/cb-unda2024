@@ -40,3 +40,9 @@
         color: var(--col-red-400);
     }
 }
+
+button.gform_button {
+    @extend .btn;
+    @extend .btn-primary;
+    border: none;
+}
