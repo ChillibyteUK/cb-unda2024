@@ -21395,6 +21395,10 @@ button.gform_button {
   border: none;
 }
 
+.gform_wrapper.gravity-theme .gform_footer.left_label {
+  padding-top: 0 !important;
+}
+
 .header__logo,
 header__logo {
   max-width: 160px;

@@ -46,3 +46,6 @@ button.gform_button {
     @extend .btn-primary;
     border: none;
 }
+.gform_wrapper.gravity-theme .gform_footer.left_label {
+    padding-top: 0 !important;
+}
