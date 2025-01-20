@@ -31,8 +31,10 @@ header {
     }
    }
 
-   .dropdown-item {
-        white-space: wrap;
+   @media (max-width: 768px) {
+       .dropdown-item {
+            white-space: wrap;
+       }
    }
 
    .dropdown-toggle.nav-link.show {

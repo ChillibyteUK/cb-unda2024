@@ -21429,9 +21429,11 @@ header #navbar a.nav-link {
   font-weight: var(--fw-700);
   font-size: var(--fs-350);
 }
-.header .dropdown-item,
-header .dropdown-item {
-  white-space: wrap;
+@media (max-width: 768px) {
+  .header .dropdown-item,
+  header .dropdown-item {
+    white-space: wrap;
+  }
 }
 .header .dropdown-toggle.nav-link.show,
 header .dropdown-toggle.nav-link.show {
