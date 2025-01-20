@@ -42,15 +42,15 @@
 
     ?>
     <div class="container-xl">
-        <div class="row gy-5">
-            <div class="col-md-8">
+        <div class="row">
+            <div class="col-md-8 pb-4">
                 <?php
                 foreach ( $other_blocks as $block ) {
                     echo render_block( $block );
                 }
                 ?>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 pb-4">
                 <?php
                 if (is_active_sidebar('cta-sidebar')) {
                     dynamic_sidebar( 'cta-sidebar' );
