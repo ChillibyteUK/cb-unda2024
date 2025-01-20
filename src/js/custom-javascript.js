@@ -23,6 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
       });
   });
 
+  /*
   // hide beyond height of navbar (--h-top)
   let lastScrollPosition = 0;
   // const navbar = document.getElementById('wrapper-navbar');
@@ -44,6 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
       lastScrollPosition = currentScroll <= 0 ? 0 : currentScroll;
   });
+  */
 
 });
 
