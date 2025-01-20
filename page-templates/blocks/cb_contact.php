@@ -11,6 +11,7 @@
             <?=social_icons('fa-2x')?>
         </div>
         <div class="col-md-6">
+            <h2>Get in Touch</h2>
             <?=do_shortcode('[gravityform id="2" title="false"]')?>
         </div>
     </div>
