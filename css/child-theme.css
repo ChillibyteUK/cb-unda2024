@@ -21962,6 +21962,8 @@ footer .cb:hover {
 .cta-inline {
   margin-bottom: 2rem;
   border-radius: 1rem;
+  padding-inline: 2rem;
+  text-align: center;
 }
 
 .faq_block .accordion-item {
