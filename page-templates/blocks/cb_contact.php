@@ -1,5 +1,5 @@
 <div class="container-xl pb-5">
-    <div class="row pb-5">
+    <div class="row gy-5 pb-5">
         <div class="col-md-4">
             <h2>Contact Unda</h2>
             <ul class="fa-ul">
