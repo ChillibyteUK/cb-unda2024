@@ -21709,6 +21709,10 @@ footer .cb:hover {
   isolation: isolate;
   overflow: clip;
 }
+.hero.hero--short {
+  height: auto;
+  padding-bottom: 1rem;
+}
 .hero h1, .hero .h1 {
   font-size: var(--fs-800);
 }

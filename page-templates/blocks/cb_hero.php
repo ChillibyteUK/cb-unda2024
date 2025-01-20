@@ -1,3 +1,6 @@
+<?php
+$heroHeight = get_field('background') ? '' : 'hero--short';
+?>
 <section class="hero">
     <div class="container-xl h-100">
         <div class="row h-100">
