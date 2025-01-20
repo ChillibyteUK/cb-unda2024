@@ -21407,16 +21407,29 @@ header__logo {
 }
 .header #wrapper-navbar,
 header #wrapper-navbar {
-  transition: top var(--transition);
+  transition: top 300ms ease;
+  top: 0;
 }
 .header.hidden #wrapper-navbar,
 header.hidden #wrapper-navbar {
-  top: -91px;
+  top: -130px;
 }
 .header .prenav,
 header .prenav {
-  background-color: var(--col-grey-400);
+  background-color: var(--col-green-400);
+  font-size: var(--fs-350);
+  width: 100%;
   padding-block: 0.5rem;
+}
+.header .prenav a,
+header .prenav a {
+  color: white;
+}
+.header .prenav .container-xl,
+header .prenav .container-xl {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 .header #navbar,
 header #navbar {

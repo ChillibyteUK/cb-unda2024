@@ -109,6 +109,12 @@ do_action('wp_body_open');
 ?>
     <header class="navholder" id="navholder">
         <div id="wrapper-navbar" class="fixed-top">
+            <section class="prenav">
+                <div class="container-xl">
+                    <?=do_shortcode('[contact_phone]')?>
+                    <?=do_shortcode('[contact_email]')?>
+                </div>
+            </section>
             <nav id="navbar" class="navbar navbar-expand-lg" aria-labelledby="main-nav-label">
                 <div class="container-xl">
                     <a href="/"><img class="header__logo" src="<?=get_stylesheet_directory_uri()?>/img/unda-logo.svg" alt="Home" width="317" height="93"></a>

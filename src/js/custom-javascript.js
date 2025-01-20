@@ -13,19 +13,18 @@ document.addEventListener('DOMContentLoaded', function() {
 /*
   const navLinks = document.querySelectorAll('.nav-link');
   const navbarCollapse = document.querySelector('.navbar-collapse');
-  const navbar = document.getElementById('navholder');
   navLinks.forEach(link => {
-      link.addEventListener('click', function() {
-          if (navbarCollapse.classList.contains('show')) {
+    link.addEventListener('click', function() {
+      if (navbarCollapse.classList.contains('show')) {
               // Check if the menu is open and close it
               navbarCollapse.classList.remove('show');
               navbar.classList.add('hidden');
-          }
+              }
       });
   });
 */
 
-  /*
+  const navbar = document.getElementById('navholder');
   // hide beyond height of navbar (--h-top)
   let lastScrollPosition = 0;
   // const navbar = document.getElementById('wrapper-navbar');
@@ -47,7 +46,6 @@ document.addEventListener('DOMContentLoaded', function() {
   
       lastScrollPosition = currentScroll <= 0 ? 0 : currentScroll;
   });
-  */
 
 });
 
