@@ -40,11 +40,26 @@ function contact_phone() {
     return;
 }
 
-add_shortcode('contact_email', 'contact_email');
+add_shortcode('contact_phone_icon', 'contact_phone_icon');
+function contact_phone_icon() {
+    if (get_field('contact_phone', 'options')) {
+        return '<a href="tel:' . parse_phone(get_field('contact_phone', 'options')) . '"><i class="fas fa-phone"></i> ' . get_field('contact_phone', 'options') . '</a>';
+    }
+    return;
+}
 
+add_shortcode('contact_email', 'contact_email');
 function contact_email() {
     if (get_field('contact_email', 'options')) {
         return '<a href="mailto:' . get_field('contact_email', 'options') . '">' . get_field('contact_email', 'options') . '</a>';
+    }
+    return;
+}
+
+add_shortcode('contact_email_icon', 'contact_email_icon');
+function contact_email_icon() {
+    if (get_field('contact_email', 'options')) {
+        return '<a href="mailto:' . get_field('contact_email', 'options') . '"><i class="fas fa-envelope"></i> ' . get_field('contact_email', 'options') . '</a>';
     }
     return;
 }

@@ -111,8 +111,8 @@ do_action('wp_body_open');
         <div id="wrapper-navbar" class="fixed-top">
             <section class="prenav">
                 <div class="container-xl">
-                    <?=do_shortcode('[contact_phone]')?>
-                    <?=do_shortcode('[contact_email]')?>
+                    <?=do_shortcode('[contact_phone_icon]')?>
+                    <?=do_shortcode('[contact_email_icon]')?>
                 </div>
             </section>
             <nav id="navbar" class="navbar navbar-expand-lg" aria-labelledby="main-nav-label">
