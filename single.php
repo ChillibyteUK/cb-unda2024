@@ -90,7 +90,7 @@ while ($r->have_posts()) {
 }
 ?>
                 <div class="text-center">
-                    <a href="/start-a-quote/" class="btn btn-primary aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">Start a Quote</a>
+                    <a href="/contact-us/" class="btn btn-primary aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">Get in Touch</a>
                 </div>
             </div>
         </div>
