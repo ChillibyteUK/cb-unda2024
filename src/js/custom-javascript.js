@@ -10,6 +10,7 @@ window.addEventListener("load", function () {
 const lightbox = GLightbox();
 
 document.addEventListener('DOMContentLoaded', function() {
+/*
   const navLinks = document.querySelectorAll('.nav-link');
   const navbarCollapse = document.querySelector('.navbar-collapse');
   const navbar = document.getElementById('navholder');
@@ -22,6 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
           }
       });
   });
+*/
 
   /*
   // hide beyond height of navbar (--h-top)
