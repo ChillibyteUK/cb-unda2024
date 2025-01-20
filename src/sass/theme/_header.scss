@@ -30,4 +30,12 @@ header {
         font-size: var(--fs-350);
     }
    }
+
+   .dropdown-item {
+        white-space: wrap;
+   }
+
+   .dropdown-toggle.nav-link.show {
+    text-align: center;
+   }
 }
