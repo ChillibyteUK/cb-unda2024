@@ -1,5 +1,5 @@
 <?php
-$heroHeight = get_field('background') ? '' : '';
+$heroHeight = get_field('background') ? '' : 'hero--short';
 ?>
 <section class="hero <?=$heroHeight?>">
     <div class="container-xl h-100">
