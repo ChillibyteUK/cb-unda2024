@@ -11,6 +11,6 @@ if ( $template == 'page-templates/sidebar.php' ) {
             <div class="h2 mb-0">Get a no-obligation, free quote</div>
             <p class="text-white mb-2">One of our experienced Flood Risk Consultants will get back to you within 60 minutes</p>
         </div>
-        <a href="/contact-us/" class="btn btn-secondary">Get in Touch</a>
+        <a href="/start-a-quote/" class="btn btn-secondary">Get a Quote</a>
     </div>
 </section>
