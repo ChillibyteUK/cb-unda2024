@@ -5,12 +5,29 @@ defined('ABSPATH') || exit;
 $page_for_posts = get_option('page_for_posts');
 $bg = get_the_post_thumbnail_url($page_for_posts, 'full') ?? null;
 
+// Prevent caching issues
+wp_cache_flush();
+header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
+header("Cache-Control: post-check=0, pre-check=0", false);
+header("Pragma: no-cache");
+
 get_header();
 
 // Sanitize input values
 $category_slug = filter_input(INPUT_POST, 'category', FILTER_UNSAFE_RAW ) ?? null;
 $date_from = filter_input(INPUT_POST, 'dateFrom', FILTER_UNSAFE_RAW ) ?? null;
 $date_to = filter_input(INPUT_POST, 'dateTo', FILTER_UNSAFE_RAW ) ?? null;
+
+// Default date_from to the earliest post date or a far-past date
+if (!$date_from) {
+    $date_from = '2000-01-01';
+}
+
+// Default date_to to today
+if (!$date_to || strtotime($date_to) > time()) {
+    $date_to = date('Y-m-d');
+}
+
 
 ?>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.0.0/css/flag-icons.min.css" />
@@ -31,7 +48,8 @@ $date_to = filter_input(INPUT_POST, 'dateTo', FILTER_UNSAFE_RAW ) ?? null;
 
 //  filters here
 ?>
-<form action="<?=home_url('/news/')?>" method="post" class="mb-4">
+<form action="<?=home_url('/news/')?>" method="get" class="mb-4">
+    <?php wp_nonce_field('news_filter_form', 'news_filter_nonce'); ?>
     <div class="row g-2">
         <div class="col-md-3">
             <select name="category" class="form-select">
@@ -89,14 +107,25 @@ echo '<div class=" mb-5">';
 $args = array(
     'post_type' => 'post', // or 'any' if you want to include custom post types
     'post_status' => 'publish',
-    'category_name' => $category_slug, // Use category slug
+    'category_name' => isset($category_slug) ? sanitize_text_field($category_slug) : '',
     'date_query' => array(
         array(
-            'after' => $date_from,
-            'before' => $date_to,
+            'column'   => 'post_date',
+            'after'    => array(
+                'year'  => date('Y', strtotime($date_from)),
+                'month' => date('m', strtotime($date_from)),
+                'day'   => date('d', strtotime($date_from)),
+            ),
+            'before'   => array(
+                'year'  => date('Y', strtotime($date_to)),
+                'month' => date('m', strtotime($date_to)),
+                'day'   => date('d', strtotime($date_to)),
+            ),
             'inclusive' => true,
         ),
     ),
+    'orderby' => 'date',
+    'order' => 'DESC',
     'posts_per_page' => -1, // -1 means all matching posts
 );
     
