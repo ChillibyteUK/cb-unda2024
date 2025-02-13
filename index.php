@@ -14,9 +14,9 @@ header("Pragma: no-cache");
 get_header();
 
 // Sanitize input values
-$category_slug = filter_input(INPUT_POST, 'category', FILTER_UNSAFE_RAW ) ?? null;
-$date_from = filter_input(INPUT_POST, 'dateFrom', FILTER_UNSAFE_RAW ) ?? null;
-$date_to = filter_input(INPUT_POST, 'dateTo', FILTER_UNSAFE_RAW ) ?? null;
+$category_slug = filter_input(INPUT_GET, 'category', FILTER_UNSAFE_RAW ) ?? null;
+$date_from = filter_input(INPUT_GET, 'dateFrom', FILTER_UNSAFE_RAW ) ?? null;
+$date_to = filter_input(INPUT_GET, 'dateTo', FILTER_UNSAFE_RAW ) ?? null;
 
 // Default date_from to the earliest post date or a far-past date
 if (!$date_from) {
@@ -80,15 +80,17 @@ while ( $oldest_post_query->have_posts() ) {
     $oldest_post_query->the_post(); // Set up post data
     $min = get_the_date('Y-m-d',get_the_ID());
 }
-$value_date_from = $date_from ?? $min; // Use submitted dateFrom or the minimum date
-echo "<input type='date' name='dateFrom' value='{$value_date_from}' class='form-control'>";
+
+
+            // Ensure the correct dateFrom value is retained
+            $value_date_from = isset($date_from) ? esc_attr($date_from) : '2015-01-01';
+            echo "<input type='date' name='dateFrom' value='{$value_date_from}' class='form-control'>";
 ?>
         </div>
         <div class="col-6 col-md-2">
 <?php
-// date to
-$max = date('Y-m-d');
-$value_date_to = $date_to ?? $max; // Use submitted dateTo or today's date
+// Ensure the correct dateTo value is retained
+$value_date_to = isset($date_to) ? esc_attr($date_to) : date('Y-m-d');
 echo "<input type='date' name='dateTo' value='{$value_date_to}' class='form-control'>";
 ?>
         </div>
@@ -107,7 +109,6 @@ echo '<div class=" mb-5">';
 $args = array(
     'post_type' => 'post', // or 'any' if you want to include custom post types
     'post_status' => 'publish',
-    'category_name' => isset($category_slug) ? sanitize_text_field($category_slug) : '',
     'date_query' => array(
         array(
             'column'   => 'post_date',
@@ -128,7 +129,11 @@ $args = array(
     'order' => 'DESC',
     'posts_per_page' => -1, // -1 means all matching posts
 );
-    
+
+if (!empty($category_slug)) {
+    $args['category_name'] = sanitize_text_field($category_slug);
+}
+
 // Create a new WP_Query instance
 $query = new WP_Query($args);
 
