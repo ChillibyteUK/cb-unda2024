@@ -20,7 +20,7 @@ $date_to = filter_input(INPUT_POST, 'dateTo', FILTER_UNSAFE_RAW ) ?? null;
 
 // Default date_from to the earliest post date or a far-past date
 if (!$date_from) {
-    $date_from = '2000-01-01';
+    $date_from = '2015-01-01';
 }
 
 // Default date_to to today
