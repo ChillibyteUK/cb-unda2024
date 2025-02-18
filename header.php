@@ -131,6 +131,7 @@ do_action('wp_body_open');
                     <?php 
                     } 
                     ?>
+                    </a>
                     <button class="navbar-toggler input-button" id="navToggle" data-bs-toggle="collapse"
                         data-bs-target=".navbars" type="button" aria-label="Navigation"><i
                             class="fa fa-navicon"></i></button>
