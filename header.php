@@ -117,7 +117,20 @@ do_action('wp_body_open');
             </section>
             <nav id="navbar" class="navbar navbar-expand-lg" aria-labelledby="main-nav-label">
                 <div class="container-xl">
-                    <a href="/"><img class="header__logo" src="<?=get_stylesheet_directory_uri()?>/img/unda-logo.svg" alt="Home" width="317" height="93"></a>
+                    <a href="/">
+                    <?php 
+                    if (has_custom_logo()) {
+                        $custom_logo_id = get_theme_mod('custom_logo');
+                        $logo = wp_get_attachment_image_src($custom_logo_id, 'full');
+                        if ($logo) {
+                            echo '<img class="header__logo" src="' . esc_url($logo[0]) . '" alt="Home" width="317" height="93">';
+                        }
+                    } else {
+                        ?>
+                        <img class="header__logo" src="<?= get_stylesheet_directory_uri(); ?>/img/unda-logo.svg" alt="Home" width="317" height="93">
+                    <?php 
+                    } 
+                    ?>
                     <button class="navbar-toggler input-button" id="navToggle" data-bs-toggle="collapse"
                         data-bs-target=".navbars" type="button" aria-label="Navigation"><i
                             class="fa fa-navicon"></i></button>
