@@ -21478,6 +21478,7 @@ footer .colophon {
 }
 footer .footer__logo {
   width: min(300px, 90vw);
+  filter: invert(1) brightness(2);
 }
 footer .cb {
   content: url(../img/cb.png);

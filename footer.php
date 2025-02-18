@@ -8,8 +8,19 @@ defined('ABSPATH') || exit;
     <div class="footer container-xl pt-5 pb-4">
         <div class="row g-4">
             <div class="col-lg-2">
-                <img src="<?=get_stylesheet_directory_uri()?>/img/unda-logo--wo.svg"
-                    class="footer__logo" alt="Unda">
+                <?php 
+                if (has_custom_logo()) {
+                    $custom_logo_id = get_theme_mod('custom_logo');
+                    $logo = wp_get_attachment_image_src($custom_logo_id, 'full');
+                    if ($logo) {
+                        echo '<img class="footer__logo" src="' . esc_url($logo[0]) . '" alt="" width="317" height="93">';
+                    }
+                } else {
+                    ?>
+                    <img class="footer__logo" src="<?= get_stylesheet_directory_uri(); ?>/img/unda-logo.svg" alt="" width="317" height="93">
+                <?php 
+                } 
+                ?>
             </div>
             <div class="col-lg-3">
                 <div class="footer__address">
