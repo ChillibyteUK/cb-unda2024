@@ -165,10 +165,9 @@ if ($query->have_posts()) {
                 </div>
             </a>
             <div class="news__meta d-flex align-items-center fs-300">
-                <div>Posted on <?=$the_date?>
-                by <?=get_the_author_meta('display_name')?>
-                </div>
-                &nbsp;|&nbsp;<div><?php
+                <div>Posted on <?=$the_date?><div>
+                <div>by <?=get_the_author_meta('display_name')?></div>
+                <div>in <?php
                 $catlinks = array();
                 foreach ($cats as $c) {
                     $link = get_term_link($c->term_id);
