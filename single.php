@@ -28,19 +28,22 @@ $after;
             <div class="col-lg-9 blog__content">
                 <h1 class="blog__title text-green-400 mb-3">
                     <?=get_the_title()?></h1>
-                    <div class="news__meta d-flex align-items-center fs-300 mb-2">
-                <div>Posted on <?=$the_date?></div>
-                &nbsp;|&nbsp;<div><?php
-                $catlinks = array();
-                foreach ($cats as $c) {
-                    $link = get_term_link($c->term_id);
-                    $catlinks[] = "<a href=\"{$link}\">{$c->cat_name}</a>";
-                }
-                echo implode(', ', $catlinks);
-echo '.';
-                ?>
+
+                <div class="news__meta d-flex gap-1 align-items-center flex-wrap fs-300 mb-2">
+                    <div>Posted on <?=$the_date?></div>
+                    <div>by <?=get_the_author_meta('display_name')?></div>
+                    <div>in <?php
+                    $catlinks = array();
+                    foreach ($cats as $c) {
+                        $link = get_term_link($c->term_id);
+                        $catlinks[] = "<a href=\"{$link}\">{$c->cat_name}</a>";
+                    }
+                    echo implode(', ', $catlinks);
+                    echo '.';
+                    ?>
+                    </div>
                 </div>
-            </div>
+
             <?php
                 if ($img) {
                     ?>
