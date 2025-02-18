@@ -165,7 +165,7 @@ if ($query->have_posts()) {
                 </div>
             </a>
             <div class="news__meta d-flex align-items-center flex-wrap fs-300">
-                <div>Posted on <?=$the_date?><div>
+                <div>Posted on <?=$the_date?></div>
                 <div>by <?=get_the_author_meta('display_name')?></div>
                 <div>in <?php
                 $catlinks = array();
@@ -176,7 +176,6 @@ if ($query->have_posts()) {
                 echo implode(', ', $catlinks);
 echo '.';
                 ?>
-                </div>
                 </div>
             </div>
         </div>
