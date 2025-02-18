@@ -164,7 +164,7 @@ if ($query->have_posts()) {
                     <div class="news__excerpt text-black mb-2"><?=wp_trim_words(get_the_content(),40)?></div>
                 </div>
             </a>
-            <div class="news__meta d-flex align-items-center fs-300">
+            <div class="news__meta d-flex align-items-center flex-wrap fs-300">
                 <div>Posted on <?=$the_date?><div>
                 <div>by <?=get_the_author_meta('display_name')?></div>
                 <div>in <?php
@@ -176,6 +176,7 @@ if ($query->have_posts()) {
                 echo implode(', ', $catlinks);
 echo '.';
                 ?>
+                </div>
                 </div>
             </div>
         </div>
